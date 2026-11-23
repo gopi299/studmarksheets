@@ -11,97 +11,64 @@ Marksheets</head>
 <p>A machine learning and exploratory data analysis (EDA) project built with Python that processes student marksheet data, visualizes feature correlations, and trains a Linear Regression model to predict student age.<p>
 
 <h2>
-Project Overview 
-   
-**1. Data Collection**
-Collected student information from Marksheets.csv.
-
-Dataset contains 100 student records and 9 columns.
-
-Includes demographic details and marks in four subjects.
-
-2. Data Exploration
-Used Pandas to understand the dataset structure.
-
-Checked column names, data types, and dimensions.
-
-Generated statistical summaries using describe().
-
-3. Data Cleaning
-Verified missing values using isnull().sum().
-
-Checked the dataset for data completeness.
-
-Prepared the dataset for further analysis.
-
-4. Data Preprocessing
-Applied Label Encoding to convert categorical values into numerical format.
-
-Removed unnecessary columns such as Name and Section.
-
-Prepared numerical data for analysis and model building.
-
-5. Exploratory Data Analysis (EDA)
-Analyzed student demographic details and academic performance.
-
-Studied relationships between subject marks and student age.
-
-Used correlation analysis to understand feature relationships.
-
-6. Data Visualization
-Created a correlation heatmap using Seaborn.
-
-Used Matplotlib for graphical representation.
-
-Identified positive and negative relationships between numerical variables.
-
-7. Model Building
-Selected Linear Regression as the machine learning algorithm.
-
-Identified Age as the target variable.
-
-Selected relevant student details and subject marks as input features.
-
-8. Model Training and Testing
-Divided the dataset into 80% training data and 20% testing data.
-
-Trained the Linear Regression model using Scikit-Learn.
-
-Prepared the model for predicting student age.
-
-9. Model Serialization
-Used Joblib to save the trained model.
-
-Exported the model as evebatch.pkl.
-
-Enabled future model loading without retraining.
-
-10. Future Improvements
-Remove Age from the input features to avoid data leakage.
-
-Improve prediction accuracy through proper feature selection.
-
-Evaluate model performance using MAE, MSE, RMSE, and R² score.
-
-Explore additional machine learning algorithms.
-
-Develop a user-friendly interface for making predictions.
-
-🎯 Conclusion
-This project successfully demonstrates the implementation of a basic Machine Learning workflow using Python. It provides practical experience in handling student datasets, performing data preprocessing, conducting exploratory data analysis, visualizing correlations, and developing a Linear Regression model.
-
-By utilizing libraries such as Pandas, NumPy, Matplotlib, Seaborn, and Scikit-Learn, the project helps understand how real-world data can be analyzed and used for machine learning applications.
-
-The trained model is saved as evebatch.pkl using Joblib, allowing it to be reused for future predictions without repeating the training process.
-
-Overall, this project provides a strong foundation in Data Analysis and Machine Learning, while offering opportunities for future improvements in model accuracy, reliability, and deployment.
-
-Project
-Summary
- The project covers the complete machine learning pipeline, from data collection to model serialization, with an important scope for improvement by eliminating target-variable leakage before final model evaluation.
-
-
-
+Student Marksheet Analysis & Age Prediction
+1. Introduction
+- This project uses Python and Machine Learning to analyze student marksheet data.
+- It works with 100 student records.
+- It analyzes student details, age, gender, and marks in four subjects.
+- It uses Linear Regression to predict student age.
+2. Project Objectives
+- To analyze student academic performance.
+- To identify patterns and relationships in student marks.
+- To clean and process the dataset.
+- To visualize data using graphs and heatmaps.
+- To build a Machine Learning model for age prediction.
+3. Dataset Description
+- Total Records: 100 students.
+- Total Columns: 9.
+- Student Details: ID, Name, Gender, Age, Section.
+- Subjects: Science, English, History, Maths.
+- Age Range: 13–15 years.
+- Marks Range: 1–100.
+4. Technologies Used
+- Python: Main programming language.
+- NumPy: Numerical calculations.
+- Pandas: Data handling and analysis.
+- Matplotlib: Graph visualization.
+- Seaborn: Correlation heatmap.
+- Scikit-Learn: Machine Learning model development.
+- Joblib: Saving the trained model.
+5. Data Preprocessing
+- Loaded the CSV dataset.
+- Checked data types and missing values.
+- Converted categorical data into numerical values using LabelEncoder.
+- Removed unnecessary columns for model training.
+- Prepared the dataset for Machine Learning.
+6. Exploratory Data Analysis (EDA)
+- Analyzed student marks and age.
+- Calculated statistical summaries.
+- Checked relationships between different features.
+- Created a correlation heatmap.
+- Identified patterns in the dataset.
+7. Machine Learning Model
+- Used Linear Regression.
+- Divided the dataset into 80% training and 20% testing data.
+- Trained the model using selected features.
+- Predicted student age using the trained model.
+- Evaluated model performance.
+8. Model Saving
+- Used Joblib to save the trained model.
+- Saved the model as evebatch.pkl.
+- The saved model can be loaded for future predictions without retraining.
+9. Advantages
+- Easy analysis of student records.
+- Saves time in data processing.
+- Helps understand academic data.
+- Provides graphical representation of data.
+- Introduces practical Machine Learning concepts.
+10. Conclusion
+This project successfully demonstrates how Python and Machine Learning can be used to analyze student marksheet data. It includes data cleaning, statistical analysis, visualization, and Linear Regression model training. The project helps understand student information and relationships between academic features. It also provides practical knowledge of Exploratory Data Analysis and Machine Learning.
 </body>
 </html>
+
 
