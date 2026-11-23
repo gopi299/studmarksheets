@@ -12,6 +12,7 @@ Marksheets</head>
 
 <h2>
 Student Marksheet Analysis & Age Prediction
+  
 1. Introduction
 - This project uses Python and Machine Learning to analyze student marksheet data.
 - It works with 100 student records.
@@ -70,5 +71,6 @@ Student Marksheet Analysis & Age Prediction
 This project successfully demonstrates how Python and Machine Learning can be used to analyze student marksheet data. It includes data cleaning, statistical analysis, visualization, and Linear Regression model training. The project helps understand student information and relationships between academic features. It also provides practical knowledge of Exploratory Data Analysis and Machine Learning.
 </body>
 </html>
+
 
 
