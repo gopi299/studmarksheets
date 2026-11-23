@@ -10,63 +10,98 @@ Marksheets</head>
 
 <p>A machine learning and exploratory data analysis (EDA) project built with Python that processes student marksheet data, visualizes feature correlations, and trains a Linear Regression model to predict student age.<p>
 
-<h2>## 📋 Project Overview</h2>
-<p>This project analyzes a dataset of 100 student records (`Marksheets.csv`) containing demographic details and academic scores across four subjects. The workflow covers data loading, summary statistics, missing value verification, categorical encoding, correlation visualization, model training, and model serialization.
-<
-<2><u>## 📊 Dataset Description</u></h2>
-<p>
-The dataset (`Marksheets.csv`) consists of **100 rows and 9 columns**:
-* **`id`**: Student identification number
-* **`Name`**: Student's name
-* **`Gender`**: Student's gender (`Male` / `Female`)
-* **`Age`**: Age of the student (Target variable, ranging from 13 to 15)
-* **`Section`**: Assigned class section (`A`, `B`, or `C`)
-* **`Science`**, **`English`**, **`History`**, **`Maths`**: Subject marks (ranging from 1 to 100)
+<h2>
+Project Overview 
+   
+**1. Data Collection**
+Collected student information from Marksheets.csv.
 
-<2>## 🛠️ Technologies Used<2>
-<p>* **Python**
-* **NumPy & Pandas**: Data manipulation, cleaning, and statistical analysis
-* **Matplotlib & Seaborn**: Data visualization and correlation heatmap generation
-* **Scikit-Learn**: Label encoding, train-test splitting, and Linear Regression modeling
-* **Joblib**: Saving and loading the trained model (`evebatch.pkl`)
-</p>
+Dataset contains 100 student records and 9 columns.
 
-<h2>## ⚙️ Workflow & Key Steps<h2>
-<p>
-1. **Data Exploration & Cleaning**: Checked data types (`info()`), statistical summaries (`describe()`), and verified zero missing values across all columns (`isnull().sum()`).
-2. **Preprocessing**: Encoded the `Gender` column using `LabelEncoder` and dropped non-numeric columns (`Name`, `Section`, `Gender`) for correlation and modeling.
-3. **Exploratory Data Analysis (EDA)**: Generated a Seaborn correlation heatmap to inspect relationships between subject scores and age.
-4. **Model Training**: Split the dataset into training (80%) and testing (20%) sets (`test_size=0.2`) and fitted a `LinearRegression` model.
-5. **Model Serialization**: Exported the trained model using `joblib` as `evebatch.pkl` for future inference.
-</p>
-<h3>## 🚀 How to Run</h3>
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com
-   cd your-repo-name
-   ```
+Includes demographic details and marks in four subjects.
 
-2. **Install required dependencies:**
-   ```bash
-   pip install numpy pandas matplotlib seaborn scikit-learn joblib
-   ```
+2. Data Exploration
+Used Pandas to understand the dataset structure.
 
-3. **Run the Jupyter Notebook:**
-   Open the notebook file (`.ipynb`) in Jupyter Notebook or Anaconda, update the file path to `Marksheets.csv` if needed, and run all cells.
+Checked column names, data types, and dimensions.
 
-4. **Load the saved model for predictions:**
-   ```python
-   import joblib
+Generated statistical summaries using describe().
 
-   loaded_model = joblib.load('evebatch.pkl')
-   # Input format: [[id, Age, Science, English, History, Maths]]
-   prediction = loaded_model.predict([[82, 96, 89, 56, 50, 60]])
-   print(prediction)
-   ```
+3. Data Cleaning
+Verified missing values using isnull().sum().
 
-<h3><u> 💡 Note for Future Improvements</u></h3>
-<p>
-Currently, the target variable (`Age`) is included in the feature matrix `X` (`X = data.drop(["Name", "Section", "Gender"], axis=1)`), which causes data leakage (resulting in the model predicting the exact input age, e.g., `96.` when `96` is passed in the second position). Dropping `"Age"` from `X` before training will allow the model to genuinely predict age based solely on subject marks.
-</p>
+Checked the dataset for data completeness.
+
+Prepared the dataset for further analysis.
+
+4. Data Preprocessing
+Applied Label Encoding to convert categorical values into numerical format.
+
+Removed unnecessary columns such as Name and Section.
+
+Prepared numerical data for analysis and model building.
+
+5. Exploratory Data Analysis (EDA)
+Analyzed student demographic details and academic performance.
+
+Studied relationships between subject marks and student age.
+
+Used correlation analysis to understand feature relationships.
+
+6. Data Visualization
+Created a correlation heatmap using Seaborn.
+
+Used Matplotlib for graphical representation.
+
+Identified positive and negative relationships between numerical variables.
+
+7. Model Building
+Selected Linear Regression as the machine learning algorithm.
+
+Identified Age as the target variable.
+
+Selected relevant student details and subject marks as input features.
+
+8. Model Training and Testing
+Divided the dataset into 80% training data and 20% testing data.
+
+Trained the Linear Regression model using Scikit-Learn.
+
+Prepared the model for predicting student age.
+
+9. Model Serialization
+Used Joblib to save the trained model.
+
+Exported the model as evebatch.pkl.
+
+Enabled future model loading without retraining.
+
+10. Future Improvements
+Remove Age from the input features to avoid data leakage.
+
+Improve prediction accuracy through proper feature selection.
+
+Evaluate model performance using MAE, MSE, RMSE, and R² score.
+
+Explore additional machine learning algorithms.
+
+Develop a user-friendly interface for making predictions.
+
+🎯 Conclusion
+This project successfully demonstrates the implementation of a basic Machine Learning workflow using Python. It provides practical experience in handling student datasets, performing data preprocessing, conducting exploratory data analysis, visualizing correlations, and developing a Linear Regression model.
+
+By utilizing libraries such as Pandas, NumPy, Matplotlib, Seaborn, and Scikit-Learn, the project helps understand how real-world data can be analyzed and used for machine learning applications.
+
+The trained model is saved as evebatch.pkl using Joblib, allowing it to be reused for future predictions without repeating the training process.
+
+Overall, this project provides a strong foundation in Data Analysis and Machine Learning, while offering opportunities for future improvements in model accuracy, reliability, and deployment.
+
+Project
+Summary
+ The project covers the complete machine learning pipeline, from data collection to model serialization, with an important scope for improvement by eliminating target-variable leakage before final model evaluation.
+
+
+
 </body>
 </html>
+
