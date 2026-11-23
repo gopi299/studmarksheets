@@ -3,7 +3,7 @@
 Marksheets</head>
 <body>
 
-<h1># Student Marksheet Analysis & Age Prediction</h1>
+<h1> Student Marksheet Analysis & Age Prediction</h1>
 <br>
 <br>
 
@@ -69,8 +69,10 @@ Student Marksheet Analysis & Age Prediction
 - Introduces practical Machine Learning concepts.
 10. Conclusion
 This project successfully demonstrates how Python and Machine Learning can be used to analyze student marksheet data. It includes data cleaning, statistical analysis, visualization, and Linear Regression model training. The project helps understand student information and relationships between academic features. It also provides practical knowledge of Exploratory Data Analysis and Machine Learning.
+Overall, this project improves our understanding of Python, data analysis, visualization, and predictive modeling.
 </body>
 </html>
+
 
 
 
