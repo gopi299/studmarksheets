@@ -1,16 +1,4 @@
-<html> 
-<head>
-Marksheets</head>
-<body>
 
-<h1> Student Marksheet Analysis & Age Prediction</h1>
-<br>
-<br>
-
-
-<p>A machine learning and exploratory data analysis (EDA) project built with Python that processes student marksheet data, visualizes feature correlations, and trains a Linear Regression model to predict student age.<p>
-
-<h2>
 Student Marksheet Analysis & Age Prediction
   
 1. Introduction
